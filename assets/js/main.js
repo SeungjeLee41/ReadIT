@@ -169,6 +169,29 @@
     })();
   }
 
+  /* ---------------- FAQ accordion (one open at a time) ---------------- */
+  var faqItems = document.querySelectorAll(".faq-item");
+  faqItems.forEach(function (item) {
+    item.addEventListener("toggle", function () {
+      if (!item.open) return;
+      faqItems.forEach(function (other) {
+        if (other !== item) other.open = false;
+      });
+    });
+  });
+
+  /* ---------------- contact form (no backend wired yet) ---------------- */
+  var contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      /* Replace this with your form service or email endpoint. */
+      var note = document.getElementById("formNote");
+      note.hidden = false;
+      note.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    });
+  }
+
   /* ==========================================================================
      WebGL liquid glass blob (dependency-free)
      ========================================================================== */

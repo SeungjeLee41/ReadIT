@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BCDS — Investor Relations</title>
-  <meta name="description" content="BCDS investor relations page." />
-  <meta property="og:title" content="BCDS — Investor Relations" />
+  <title>BCDS — See your business clearly. Act on it instantly.</title>
+  <meta name="description" content="BCDS unifies scattered operational data into one live workspace — dashboards, automations, and alerts that keep every team moving in the same direction." />
+  <meta property="og:title" content="BCDS — The data operations platform" />
+  <meta property="og:description" content="Dashboards, automations, and alerts on top of your live data. One workspace for every team." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23E8102E'/%3E%3Ctext x='32' y='42' font-size='30' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,8 +27,11 @@
         BCDS<span class="logo-dot">.</span>
       </a>
       <nav class="nav-links" id="navMenu" aria-label="Main menu">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
         <a href="#product">Product</a>
-        <a href="#contact" class="nav-cta" data-magnetic>Contact</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="nav-cta" data-magnetic>Request a Demo</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span>
@@ -44,17 +48,75 @@
     </div>
     <canvas id="glCanvas" aria-hidden="true"></canvas>
 
-    <div class="container hero-content">
-      <p class="eyebrow" data-reveal>INVESTOR RELATIONS</p>
-      <h1 class="hero-title" data-reveal data-delay="1">
-        BCDS<em>.</em>
-      </h1>
-      <p class="hero-sub" data-reveal data-delay="2">
-        This page publishes verified company information only.
-        Product details and materials will be added as they are confirmed.
-      </p>
-      <div class="hero-actions" data-reveal data-delay="3">
-        <a href="#contact" class="btn btn-primary" data-magnetic>Contact</a>
+    <div class="container hero-split">
+      <div class="hero-content">
+        <p class="eyebrow" data-reveal>BCDS PLATFORM</p>
+        <h1 class="hero-title" data-reveal data-delay="1">
+          See your business clearly.<br />
+          Act on it <em>instantly</em>.
+        </h1>
+        <p class="hero-sub" data-reveal data-delay="2">
+          BCDS brings scattered operational data into one live workspace —
+          dashboards, automations, and alerts that keep every team moving
+          in the same direction.
+        </p>
+        <div class="hero-actions" data-reveal data-delay="3">
+          <a href="#contact" class="btn btn-primary" data-magnetic>Request a Demo</a>
+          <a href="#features" class="btn btn-glass" data-magnetic>Explore Features</a>
+        </div>
+      </div>
+
+      <!-- Product mockup -->
+      <div class="hero-visual" data-reveal data-delay="2" aria-hidden="true">
+        <div class="mockup glass" data-tilt>
+          <div class="mockup-bar"><span></span><span></span><span></span></div>
+          <div class="mockup-body">
+            <aside class="mockup-side">
+              <span class="ms-logo"></span>
+              <span class="ms-item active"></span>
+              <span class="ms-item"></span>
+              <span class="ms-item"></span>
+              <span class="ms-item"></span>
+              <span class="ms-item"></span>
+            </aside>
+            <div class="mockup-main">
+              <div class="mockup-head">
+                <span class="mh-title"></span>
+                <span class="mh-pill"></span>
+              </div>
+              <div class="mockup-tiles">
+                <div class="m-tile"><span class="mt-label"></span><span class="mt-value"></span><span class="mt-spark s1"></span></div>
+                <div class="m-tile"><span class="mt-label"></span><span class="mt-value"></span><span class="mt-spark s2"></span></div>
+                <div class="m-tile"><span class="mt-label"></span><span class="mt-value"></span><span class="mt-spark s3"></span></div>
+              </div>
+              <div class="mockup-chart">
+                <svg viewBox="0 0 320 110" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#e8102e" stop-opacity="0.28"/>
+                      <stop offset="100%" stop-color="#e8102e" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,88 C30,80 45,60 70,64 C95,68 108,42 135,46 C162,50 175,28 205,34 C235,40 250,18 280,22 C300,25 310,14 320,12 L320,110 L0,110 Z" fill="url(#chartFill)"/>
+                  <path d="M0,88 C30,80 45,60 70,64 C95,68 108,42 135,46 C162,50 175,28 205,34 C235,40 250,18 280,22 C300,25 310,14 320,12" fill="none" stroke="#e8102e" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="280" cy="22" r="4" fill="#e8102e"/>
+                  <circle cx="280" cy="22" r="8" fill="#e8102e" opacity="0.2"/>
+                </svg>
+              </div>
+              <div class="mockup-rows">
+                <span class="m-row" style="--rw: 92%"></span>
+                <span class="m-row" style="--rw: 78%"></span>
+                <span class="m-row" style="--rw: 84%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="float-chip chip-1 glass">
+          <span class="chip-dot"></span> Live sync
+        </div>
+        <div class="float-chip chip-2 glass">
+          <span class="chip-dot chip-dot-pulse"></span> Alert sent
+        </div>
       </div>
     </div>
 
@@ -64,35 +126,219 @@
     </div>
   </section>
 
-  <!-- ============ PRODUCT (pending verified content) ============ -->
+  <!-- ============ FEATURES ============ -->
+  <section class="section" id="features">
+    <div class="section-blob section-blob-r" aria-hidden="true"></div>
+    <div class="container">
+      <p class="section-eyebrow" data-reveal>01 — FEATURES</p>
+      <h2 class="section-title" data-reveal data-delay="1">
+        Everything your operations team needs,<br />in one <em>workspace</em>
+      </h2>
+      <div class="grid grid-3">
+        <article class="card glass" data-tilt data-reveal data-delay="1">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+          </div>
+          <h3>Unified Data Hub</h3>
+          <p>Connect spreadsheets, databases, and SaaS tools. BCDS keeps every source in sync and in one place.</p>
+        </article>
+        <article class="card glass" data-tilt data-reveal data-delay="2">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-6 4 3 5-8"/></svg>
+          </div>
+          <h3>Live Dashboards</h3>
+          <p>Build dashboards in minutes. Every chart updates in real time as the underlying data changes.</p>
+        </article>
+        <article class="card glass" data-tilt data-reveal data-delay="3">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+          </div>
+          <h3>Workflow Automation</h3>
+          <p>Turn repetitive processes into automated workflows with a visual, no-code builder.</p>
+        </article>
+        <article class="card glass" data-tilt data-reveal data-delay="1">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+          </div>
+          <h3>Smart Alerts</h3>
+          <p>Set thresholds once. BCDS watches your metrics and notifies the right person at the right time.</p>
+        </article>
+        <article class="card glass" data-tilt data-reveal data-delay="2">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Team Collaboration</h3>
+          <p>Share views, assign owners, and keep every decision attached to the data it came from.</p>
+        </article>
+        <article class="card glass" data-tilt data-reveal data-delay="3">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+          </div>
+          <h3>Open API</h3>
+          <p>Extend BCDS with a REST API and webhooks that fit into your existing stack.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section section-alt" id="how">
+    <div class="section-blob section-blob-l" aria-hidden="true"></div>
+    <div class="container">
+      <p class="section-eyebrow" data-reveal>02 — HOW IT WORKS</p>
+      <h2 class="section-title" data-reveal data-delay="1">
+        Up and running in<br /><em>three steps</em>
+      </h2>
+      <div class="steps">
+        <article class="step glass" data-tilt data-reveal data-delay="1">
+          <span class="step-num">1</span>
+          <h3>Connect</h3>
+          <p>Plug in your data sources with guided connectors — no pipelines to build, no scripts to maintain.</p>
+        </article>
+        <span class="step-link" aria-hidden="true"></span>
+        <article class="step glass" data-tilt data-reveal data-delay="2">
+          <span class="step-num">2</span>
+          <h3>Automate</h3>
+          <p>Design workflows and alerts on top of your live data with the visual builder.</p>
+        </article>
+        <span class="step-link" aria-hidden="true"></span>
+        <article class="step glass" data-tilt data-reveal data-delay="3">
+          <span class="step-num">3</span>
+          <h3>Decide</h3>
+          <p>Give every team one shared, real-time picture of the business — and act with confidence.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT DEEP-DIVE ============ -->
   <section class="section" id="product">
     <div class="section-blob section-blob-r" aria-hidden="true"></div>
     <div class="container">
-      <p class="section-eyebrow" data-reveal>01 — PRODUCT</p>
+      <p class="section-eyebrow" data-reveal>03 — INSIDE THE PRODUCT</p>
       <h2 class="section-title" data-reveal data-delay="1">
-        Product information
+        A closer look at<br />the <em>platform</em>
       </h2>
-      <div class="grid grid-2">
-        <article class="card glass pending" data-reveal data-delay="1">
-          <span class="pending-chip">TO BE PROVIDED</span>
-          <h3>What the product does</h3>
-          <p>A verified description of the BCDS product will be published here.</p>
-        </article>
-        <article class="card glass pending" data-reveal data-delay="2">
-          <span class="pending-chip">TO BE PROVIDED</span>
-          <h3>Key metrics</h3>
-          <p>Verified performance figures will be published here once confirmed by the company.</p>
-        </article>
-        <article class="card glass pending" data-reveal data-delay="3">
-          <span class="pending-chip">TO BE PROVIDED</span>
-          <h3>Team</h3>
-          <p>Verified team information will be published here.</p>
-        </article>
-        <article class="card glass pending" data-reveal data-delay="4">
-          <span class="pending-chip">TO BE PROVIDED</span>
-          <h3>IR materials</h3>
-          <p>The IR deck and supporting documents will be linked here when available.</p>
-        </article>
+
+      <div class="dive">
+        <div class="dive-row">
+          <div class="dive-visual" data-reveal>
+            <div class="mockup mockup-sm glass" data-tilt>
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-body">
+                <div class="mockup-main">
+                  <div class="mockup-head">
+                    <span class="mh-title"></span>
+                    <span class="mh-pill"></span>
+                  </div>
+                  <div class="mockup-tiles">
+                    <div class="m-tile"><span class="mt-label"></span><span class="mt-value"></span><span class="mt-spark s1"></span></div>
+                    <div class="m-tile"><span class="mt-label"></span><span class="mt-value"></span><span class="mt-spark s2"></span></div>
+                  </div>
+                  <div class="mockup-chart">
+                    <svg viewBox="0 0 320 110" preserveAspectRatio="none">
+                      <path d="M0,88 C30,80 45,60 70,64 C95,68 108,42 135,46 C162,50 175,28 205,34 C235,40 250,18 280,22 C300,25 310,14 320,12 L320,110 L0,110 Z" fill="url(#chartFill)"/>
+                      <path d="M0,88 C30,80 45,60 70,64 C95,68 108,42 135,46 C162,50 175,28 205,34 C235,40 250,18 280,22 C300,25 310,14 320,12" fill="none" stroke="#e8102e" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dive-copy" data-reveal data-delay="1">
+            <h3>One live view of everything</h3>
+            <p>Dashboards combine metrics from every connected source. Filter, drill down, and share a link — what your team sees is always current.</p>
+            <ul class="dive-list">
+              <li>Real-time sync across sources</li>
+              <li>Drill-down filters on every chart</li>
+              <li>Shareable, permission-aware views</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="dive-row dive-row-rev">
+          <div class="dive-visual" data-reveal>
+            <div class="flow glass" data-tilt>
+              <div class="flow-node">
+                <span class="fn-icon">⚡</span>
+                <div class="fn-text"><strong>Trigger</strong><span>New row in Orders</span></div>
+              </div>
+              <span class="flow-line" aria-hidden="true"></span>
+              <div class="flow-node">
+                <span class="fn-icon">?</span>
+                <div class="fn-text"><strong>Condition</strong><span>Amount above threshold</span></div>
+              </div>
+              <span class="flow-line" aria-hidden="true"></span>
+              <div class="flow-node flow-node-hot">
+                <span class="fn-icon">✓</span>
+                <div class="fn-text"><strong>Action</strong><span>Notify #ops &amp; log entry</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="dive-copy" data-reveal data-delay="1">
+            <h3>Automation without code</h3>
+            <p>Compose triggers, conditions, and actions into workflows that run around the clock. Every run is logged and auditable.</p>
+            <ul class="dive-list">
+              <li>Visual drag-and-drop builder</li>
+              <li>Full run history for every workflow</li>
+              <li>Human-in-the-loop approval steps</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECURITY ============ -->
+  <section class="section section-alt" id="security">
+    <div class="section-blob section-blob-l" aria-hidden="true"></div>
+    <div class="container">
+      <p class="section-eyebrow" data-reveal>04 — SECURITY</p>
+      <h2 class="section-title" data-reveal data-delay="1">
+        Built to be <em>trusted</em><br />with your data
+      </h2>
+      <div class="security glass" data-reveal data-delay="2">
+        <ul class="security-list">
+          <li>Encryption in transit and at rest</li>
+          <li>Role-based access control</li>
+          <li>Full audit logs</li>
+          <li>SSO-ready authentication</li>
+          <li>Data export at any time</li>
+          <li>Isolated per-workspace storage</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="section-blob section-blob-r" aria-hidden="true"></div>
+    <div class="container container-narrow">
+      <p class="section-eyebrow" data-reveal>05 — FAQ</p>
+      <h2 class="section-title" data-reveal data-delay="1">
+        Frequently asked<br /><em>questions</em>
+      </h2>
+      <div class="faq" data-reveal data-delay="2">
+        <details class="faq-item glass">
+          <summary>What is BCDS?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p>BCDS is a data operations platform: it unifies your scattered sources into live dashboards, automated workflows, and smart alerts in a single workspace.</p>
+        </details>
+        <details class="faq-item glass">
+          <summary>Can I see a demo?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p>Yes — use the contact form below and we'll set up a walkthrough tailored to your team's use case.</p>
+        </details>
+        <details class="faq-item glass">
+          <summary>How long does setup take?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p>Guided connectors handle the heavy lifting, so most teams connect a first data source and build a dashboard on day one.</p>
+        </details>
+        <details class="faq-item glass">
+          <summary>How is pricing structured?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p>Pricing depends on team size and data volume. Reach out through the form below and we'll share the current plans.</p>
+        </details>
+        <details class="faq-item glass">
+          <summary>Where is my data stored?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p>Data lives in isolated per-workspace storage with encryption at rest. Detailed documentation is available on request.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -102,17 +348,61 @@
     <div class="container">
       <div class="invest-card" data-reveal>
         <div class="invest-glow" aria-hidden="true"></div>
-        <p class="invest-eyebrow">CONTACT</p>
-        <h2 class="invest-title">Investment inquiries</h2>
-        <p class="invest-note">Contact details will be added here.</p>
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <p class="invest-eyebrow">CONTACT</p>
+            <h2 class="invest-title">See BCDS<br />in action</h2>
+            <p class="invest-note">Tell us a bit about your team and we'll get back to you with a tailored walkthrough.</p>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Work email</span>
+              <input type="email" name="email" placeholder="you@company.com" required />
+            </label>
+            <label>
+              <span>Company</span>
+              <input type="text" name="company" placeholder="Company name" />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="3" placeholder="What would you like to see?"></textarea>
+            </label>
+            <button type="submit" class="btn btn-white" data-magnetic>Send Request</button>
+            <p class="form-note" id="formNote" hidden>
+              This form isn't connected to a backend yet — wire it to your form
+              service or email endpoint in <code>assets/js/main.js</code>.
+            </p>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo logo-sm">BCDS<span class="logo-dot">.</span></a>
+        <p>One live workspace for<br />your operational data.</p>
+      </div>
+      <nav class="footer-col" aria-label="Product links">
+        <strong>Product</strong>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#product">Inside the product</a>
+        <a href="#security">Security</a>
+      </nav>
+      <nav class="footer-col" aria-label="Company links">
+        <strong>Company</strong>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
     <div class="container footer-inner">
-      <a href="#hero" class="logo logo-sm">BCDS<span class="logo-dot">.</span></a>
       <p>© <span id="year">2026</span> BCDS. All rights reserved.</p>
     </div>
   </footer>
