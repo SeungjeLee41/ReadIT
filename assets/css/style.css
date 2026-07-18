@@ -234,10 +234,10 @@ body.cursor-on .cursor-ring { opacity: 1; }
   margin-bottom: 26px;
 }
 .hero-title {
-  font-size: clamp(42px, 7.2vw, 84px);
+  font-size: clamp(64px, 12vw, 148px);
   font-weight: 800;
-  line-height: 1.12;
-  letter-spacing: -0.03em;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
 }
 .hero-title em {
   color: var(--red);
@@ -405,6 +405,31 @@ body.cursor-on .cursor-ring { opacity: 1; }
 }
 [data-tilt]:hover {
   box-shadow: 0 22px 56px rgba(232, 16, 46, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+/* ---------- pending placeholder cards ---------- */
+.pending {
+  border-style: dashed;
+  border-color: rgba(232, 16, 46, 0.28);
+}
+.pending h3 { color: var(--ink); }
+.pending p { color: var(--gray-light); }
+.pending-chip {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--red);
+  background: rgba(232, 16, 46, 0.08);
+  border: 1px solid rgba(232, 16, 46, 0.2);
+  border-radius: 999px;
+  padding: 5px 12px;
+  margin-bottom: 18px;
+}
+.invest-note {
+  margin-top: 22px;
+  font-size: 16px;
+  opacity: 0.9;
 }
 
 /* ---------- about cards ---------- */
