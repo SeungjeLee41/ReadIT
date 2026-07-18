@@ -22,7 +22,7 @@
   navToggle.addEventListener("click", function () {
     var open = navMenu.classList.toggle("open");
     navToggle.setAttribute("aria-expanded", String(open));
-    navToggle.setAttribute("aria-label", open ? "메뉴 닫기" : "메뉴 열기");
+    navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
   });
   navMenu.addEventListener("click", function (e) {
     if (e.target.tagName === "A") {
@@ -69,11 +69,11 @@
       var p = Math.min((ts - start) / duration, 1);
       var eased = 1 - Math.pow(1 - p, 3);
       var value = Math.round(target * eased);
-      el.textContent = prefix + value.toLocaleString("ko-KR") + suffix;
+      el.textContent = prefix + value.toLocaleString("en-US") + suffix;
       if (p < 1) requestAnimationFrame(frame);
     }
     if (prefersReduced) {
-      el.textContent = prefix + target.toLocaleString("ko-KR") + suffix;
+      el.textContent = prefix + target.toLocaleString("en-US") + suffix;
     } else {
       requestAnimationFrame(frame);
     }
