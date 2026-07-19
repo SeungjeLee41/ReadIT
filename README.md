@@ -19,8 +19,24 @@
 
 제품 카피는 **일러스트용 샘플**입니다(구체적 수치·고객 수·인증 주장은 넣지 않음).
 실제 제품 정보로 교체 후 사용하세요. 목업 화면은 전부 CSS/SVG 스켈레톤이라 실제
-수치를 표시하지 않습니다. 문의 폼은 백엔드가 연결되어 있지 않으며, `assets/js/main.js`의
-submit 핸들러를 폼 서비스(예: Formspree)나 이메일 엔드포인트로 교체해야 합니다.
+수치를 표시하지 않습니다.
+
+### 연락처 / 문의 폼
+
+- 연락처: **010.8623.3425 / smilesean41@gmail.com** (Contact 섹션·푸터에 표시)
+- 문의 폼은 **mailto 방식**입니다. 제출 시 방문자의 메일 앱이 열리고 폼 내용이
+  자동으로 채워진 메일이 작성됩니다(수신자: smilesean41@gmail.com). 별도 백엔드가
+  없으므로 방문자 기기에 메일 앱이 설정되어 있어야 합니다. 수신 주소는
+  `assets/js/main.js`의 `CONTACT_EMAIL`에서 변경할 수 있습니다.
+
+### GitHub Pages 배포
+
+`.github/workflows/deploy-pages.yml`이 main 브랜치 푸시(또는 Actions 탭에서 수동 실행)
+시 사이트를 GitHub Pages로 배포합니다.
+
+1. **최초 1회**: 저장소 Settings → Pages → Source를 **GitHub Actions**로 설정
+2. PR을 main에 머지하면 자동 배포
+3. 배포 주소: `https://seungjelee41.github.io/ReadIT/`
 
 ### 실행
 

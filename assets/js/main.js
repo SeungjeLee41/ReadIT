@@ -180,15 +180,31 @@
     });
   });
 
-  /* ---------------- contact form (no backend wired yet) ---------------- */
+  /* ---------------- contact form → mailto ---------------- */
+  var CONTACT_EMAIL = "smilesean41@gmail.com";
   var contactForm = document.getElementById("contactForm");
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      /* Replace this with your form service or email endpoint. */
-      var note = document.getElementById("formNote");
-      note.hidden = false;
-      note.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      var data = new FormData(contactForm);
+      var name = String(data.get("name") || "").trim();
+      var email = String(data.get("email") || "").trim();
+      var company = String(data.get("company") || "").trim();
+      var message = String(data.get("message") || "").trim();
+
+      var subject = "[BCDS] Demo Request" + (name ? " — " + name : "");
+      var body =
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Company: " + company + "\n\n" +
+        message;
+
+      document.getElementById("formNote").hidden = false;
+
+      window.location.href =
+        "mailto:" + CONTACT_EMAIL +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
     });
   }
 
