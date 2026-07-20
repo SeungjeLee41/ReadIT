@@ -1,0 +1,55 @@
+# Bluefish configuration (example)
+#
+# Copy to ~/.bluefish/config.yaml or pass with `bluefish --config path.yaml`.
+# All values shown are the built-in defaults; override only what you need.
+
+# Where Bluefish keeps its state (SQLite db, pid file, logs).
+# "~" is expanded to your home directory.
+data_dir: "~/.bluefish"
+
+sensors:
+  process:
+    enabled: true
+    # Seconds between process snapshots.
+    poll_interval: 3.0
+  log:
+    enabled: true
+    # Seconds between log reads.
+    poll_interval: 2.0
+    # Log files to tail. Missing files are skipped silently.
+    paths:
+      - "/var/log/auth.log"
+      - "/var/log/syslog"
+      - "/var/log/secure"
+      - "/var/log/messages"
+
+# The "self" model — what the immune system learns to consider normal.
+self_profile:
+  # Default duration for `bluefish learn` if --minutes is not given.
+  default_learn_minutes: 5
+  # A numeric feature is "self" if within mean ± (k * stddev).
+  numeric_k: 3.0
+
+detectors:
+  adaptive:
+    # Novelty score (0..1) at or above this marks an event as non-self.
+    novelty_threshold: 0.5
+  danger:
+    # Sliding window (seconds) over which danger signals accumulate.
+    window_seconds: 60
+    # Inflammation at or above this escalates a correlated alert to the analyst.
+    escalation_threshold: 3.0
+
+response:
+  # If false, Bluefish never takes active measures — it only records and alerts.
+  # Active (destructive) measures always additionally require --confirm.
+  allow_active_measures: false
+
+llm:
+  enabled: true
+  # Analyst model. Only called for escalated alerts, never per-event.
+  model: "claude-sonnet-5"
+  max_tokens: 1024
+  # API key is read from the ANTHROPIC_API_KEY environment variable.
+  # If absent, Bluefish still runs (innate + adaptive) and marks verdicts
+  # as "unconfirmed".
